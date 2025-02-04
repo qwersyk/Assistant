@@ -22,6 +22,8 @@ install_data (
     'user-trash-symbolic.svg',
     'info-outline-symbolic.svg',
     'document-edit-symbolic.svg',
+    'zoom-in-symbolic.svg',
+    'zoom-out-symbolic.svg',
     install_dir: symbolic_dir
 )
 install_data (

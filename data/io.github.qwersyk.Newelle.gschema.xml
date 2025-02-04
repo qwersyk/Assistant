@@ -19,6 +19,10 @@
         <key name="auto-generate-name" type="b">
             <default>false</default>
         </key>
+
+        <key name="display-latex" type="b">
+            <default>true</default>
+        </key>
         <key name="path" type="s">
             <default>"~"</default>
         </key>

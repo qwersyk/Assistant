@@ -12,7 +12,7 @@ from .ollama_handler import OllamaHandler
 from .openai_handler import OpenAIHandler 
 from .openrouter_handler import OpenRouterHandler 
 from .newelle_handler import NewelleAPIHandler
-
+from .deepseek_handler import DeepseekHandler
 
 __all__ = [
     "LLMHandler",
@@ -29,4 +29,5 @@ __all__ = [
     "OpenAIHandler",
     "OpenRouterHandler",
     "NewelleAPIHandler",
+    "DeepseekHandler",
 ]

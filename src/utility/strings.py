@@ -31,7 +31,7 @@ def markwon_to_pango(markdown_text):
     
     # Convert headers
     absolute_sizes = ['xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large']
-    markdown_text = re.sub(r'^(#+) (.*)$', lambda match: f'<span font_weight="bold" font_size="{absolute_sizes[6 - len(match.group(1)) - 1]}">{match.group(2)}</span>', markdown_text, flags=re.MULTILINE)
+    markdown_text = re.sub(r'^(#+) (.*)$', lambda match: f'<span font_weight="bold" font_size="{absolute_sizes[6 - len(match.group(1))]}">{match.group(2)}</span>', markdown_text, flags=re.MULTILINE)
     
     # Check if the generated text is valid. If not just print it unformatted
     try:

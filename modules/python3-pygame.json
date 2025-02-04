@@ -2,7 +2,7 @@
     "name": "python3-pygame",
     "buildsystem": "simple",
     "build-commands": [
-        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pygame\" --no-build-isolation"
+        "PYGAME_DETECT_AVX2=1 pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pygame\" --no-build-isolation"
     ],
     "sources": [
         {

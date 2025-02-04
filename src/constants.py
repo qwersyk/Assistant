@@ -1,5 +1,5 @@
 
-from .handlers.llm import BingHandler, ClaudeHandler, GPT4AllHandler, GroqHandler, OllamaHandler, OpenAIHandler, CustomLLMHandler, GPT3AnyHandler, GeminiHandler, MistralHandler, OpenRouterHandler, NewelleAPIHandler
+from .handlers.llm import BingHandler, ClaudeHandler, DeepseekHandler, GPT4AllHandler, GroqHandler, OllamaHandler, OpenAIHandler, CustomLLMHandler, GPT3AnyHandler, GeminiHandler, MistralHandler, OpenRouterHandler, NewelleAPIHandler
 from .handlers.tts import ElevenLabs, gTTSHandler, EspeakHandler, CustomTTSHandler
 from .handlers.stt import GroqSRHandler, OpenAISRHandler, SphinxHandler, GoogleSRHandler, WhisperHandler, WitAIHandler, VoskHandler, CustomSRHandler
 
@@ -69,6 +69,13 @@ AVAILABLE_LLMS = {
         "description": _("Openrouter.ai API, supports lots of models"),
         "class": OpenRouterHandler,
         "secondary": True
+    },
+    "deepseek": {
+        "key": "deepseek",
+        "title": _("Deepseek"),
+        "description": _("Deepseek API, strongest open source models"),
+        "class": DeepseekHandler, 
+        "secondary": True,
     },
     "bing": {
         "key": "bing",

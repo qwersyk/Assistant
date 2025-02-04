@@ -34,8 +34,11 @@
     	"modules/python3-gtts.json",
     	"modules/portaudio.json",
     	"modules/python3-pyaudio.json",
-	   "modules/python3-speechrecognition.json",
+      "modules/python3-speechrecognition.json",
       "modules/python3-pygame.json",
+      "modules/python3-pillow.json",
+      "modules/python3-matplotlib.json",
+      "modules/python3-pylatexenc.json",
         {
             "name" : "newelle",
             "builddir" : true,
